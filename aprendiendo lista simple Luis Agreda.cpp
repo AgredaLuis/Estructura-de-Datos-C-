@@ -1,10 +1,5 @@
 #include <iostream>
 using namespace std;
-// Creacion de Luis Agreda cualquier plagio se lo lleva el coronavirus y bueno lo vere al otro lado 
-
-
-// Esperate un tantito ve que si se puede usar este template para listas simple y para listas dobles.
-
 
 template <class T>
 class Nodo{
@@ -105,7 +100,7 @@ public:
 			inicio=aux;
 		}else {
 			while(temp->ObtenerProximo()!=NULL){ //con un nodo temporal iremos avanzando hasta llegar al nodo que sea igual a NULL
-				temp=temp->ObtenerProximo(); // Mamame el guevo adrianny 
+				temp=temp->ObtenerProximo(); 
 			}
 			temp->FijarProximo(aux);          //llegara un momento que sera el ultimo y haremos que el siguiente sea el nodo que queremos ingresar 
 		}                                     // de por si ya el nodo siempre apunta a siguiente como null
@@ -126,7 +121,7 @@ public:
 	}
 
 		//digamos que siempre para hacer algo buscar o recorrer la lista , debe crear un nodo guia
-		// e igualarlo al nodo inicial de la lista para que lo recorra, una vaina de otro mundo
+		// e igualarlo al nodo inicial de la lista para que lo recorra.
 	void Imprimir(){
 		Nodo<T> *temp=inicio;
 		while(temp){
@@ -138,10 +133,10 @@ public:
 		
 	}
 	
-	void Eliminar(T dato){  //aqui eliminaremos por dato no por posicion, agarrate que esta esta dificil muahahaha, como que me gusta el rap
+	void Eliminar(T dato){  //aqui eliminaremos por dato no por posicion
 		Nodo<T> *temp=inicio;          // creamos un nodo para que vaya arreglando la lista
 		Nodo<T> *temp1=inicio->ObtenerProximo();  // creamos otro nodo que verificara si hay datos iguales
-		short mensaje=0; //aqui te acabo de en la boca
+		short mensaje=0;
 		
 		if(inicio->ObtenerClave()==dato){ //en este if verificamos si el primero de la lista es igual al dato
 			inicio=temp->ObtenerProximo();
