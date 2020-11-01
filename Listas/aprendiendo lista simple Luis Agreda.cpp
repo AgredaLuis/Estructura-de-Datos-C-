@@ -51,7 +51,7 @@ public:
 			aux->FijarProximo(inicio);
 			inicio=aux;
 		}
-		cout<<"ingresado jalabola"<<endl;
+		cout<<"Dato ingresado"<<endl;
 	}
 	void EliminarEnCantidad(int m){
 		int n=0;
@@ -62,7 +62,7 @@ public:
 				n++;
 			}
 			inicio=temp;
-		cout<<"se corto la lista"<<endl;
+		cout<<"se ha disminuido la lista"<<endl;
 	}
 
 	int ContarElementos(){
@@ -104,7 +104,7 @@ public:
 			}
 			temp->FijarProximo(aux);          //llegara un momento que sera el ultimo y haremos que el siguiente sea el nodo que queremos ingresar 
 		}                                     // de por si ya el nodo siempre apunta a siguiente como null
-		cout<<"marico pienso yo que se inserto"<<endl;
+		cout<<"se ha insertado el dato"<<endl;
 	}
 	void buscar(T dato){
 		Nodo<T> *temp =  inicio;
@@ -117,7 +117,7 @@ public:
 			 temp = temp->ObtenerProximo(); //aqui avanzamos en la lista 
 		 }
 		 if(cont==0)
-			   cout<<"no se encontro el dato"<<endl; 
+			   cout<<"no se encontro el dato a buscar"<<endl; 
 	}
 
 		//digamos que siempre para hacer algo buscar o recorrer la lista , debe crear un nodo guia
@@ -156,7 +156,7 @@ public:
 			}
 			Imprimir();
 			if(mensaje==0)
-				  cout<<"no se encontro el dato mmgvo"<<endl;
+				  cout<<"no se encontro el dato a eliminar"<<endl;
 		}
 		
 	}
@@ -189,7 +189,6 @@ int main(int argc, char *argv[]) {
 		switch(respuesta){
 		case 1:
 		{
-			system("cls");
 			cout<<"Esta lista es de caracteres 'char' no pongas estupideces"<<endl;
 			cout<<"ingrese el dato a guardar a la ListaSimple"<<endl;
 			cin>>dato;
@@ -199,7 +198,6 @@ int main(int argc, char *argv[]) {
 		}
 		case 2:
 		{
-			system("cls");
 			cout<<"ingrese el dato para guardar al final de la ListaSimple"<<endl;
 			cin>>dato;
 			
@@ -208,7 +206,6 @@ int main(int argc, char *argv[]) {
 		}
 		case 3:
 		{
-			system("cls");
 			 cout<<"no repito dos veces pero aja"<<endl;
 			 cout<<"ingrese la dato que quiere buscar en la lista"<<endl;
 			 cin>>dato;
@@ -217,7 +214,6 @@ int main(int argc, char *argv[]) {
 		}
 		case 4:
 		{
-			system("cls");
 			cout<<" ingrese el dato que quiere eliminar en la lsita enlazada"<<endl;
 			cin>>dato;
 			
@@ -233,7 +229,6 @@ int main(int argc, char *argv[]) {
 		}
 		case 6:
 			{
-			system("cls");
 			cout<<"eliminar por cantidad"<<endl;
 			cout<<"porfavor ingrese lacantidad que quiere eliminar"<<endl;
 			cin>>numero;
@@ -243,7 +238,6 @@ int main(int argc, char *argv[]) {
 		}
 		case 7:
 		{
-				system("cls");
 				cout<<"estas apunto de invertir la lista"<<endl;
 				cout<<"asi que agarrate"<<endl;
 				

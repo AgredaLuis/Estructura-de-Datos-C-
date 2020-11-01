@@ -128,7 +128,6 @@ int main(int argc, char *argv[]) {
 		cin>>respuesta;
 	switch(respuesta){
 	case 1:
-		system("cls");
 		cout<<"añadir persona"<<endl;
 		Persona p;
 		
@@ -144,7 +143,6 @@ int main(int argc, char *argv[]) {
 		gp.EscribirPersona(p);
 		break;
 	case 2:
-		system("cls");
 		cout<<"leer persona"<<endl;
 		cout<<"ingrese que numero de la persona que quiere leer"<<endl;
 		cin>>registro;
@@ -152,16 +150,15 @@ int main(int argc, char *argv[]) {
 		gp.LeerPersona(registro,p);
 		break;
 	case 3: 
-		system("cls");
 		cout<<"Leer todos los registros"<<'\n'<<endl;
 		gp.LeerArchivo();
 		break;
 	case 4:
-		system("cls");
 		cout<<"agregar en la posicion deseada"<<endl;
 		Persona j;
 		long registro;
-		
+		cout<<"ingrese en que posicion desea agregarlo"<<endl;
+		cin>>registro;
 		cout<<"ingrese nombre de la persona corto pls"<<endl;
 		cin>>j.nombre;
 		cout<<"ingrese apellido de la persona corto pls"<<endl;
@@ -170,17 +167,13 @@ int main(int argc, char *argv[]) {
 		cin>>j.carrera;
 		cout<<"ingerse cualidad"<<endl;
 		cin>>j.cualidad;
-		cout<<"ingrese en que posicion desea agregarlo"<<endl;
-		cin>>registro;
 		
 		gp.IngresarEnOrden(registro,j);
 		break;
 	case 5:
-		system("cls");
 		cout<<"gracias por correr el programa"<<endl;
 		break;
 	default:
-	system("cls");
 	cout<<"opcion no valida"<<endl;
 	break;
 	}
